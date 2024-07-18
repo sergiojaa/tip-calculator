@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+      font-family: "Space Mono", monospace;
+    
 }
 body{
     background-color: #c5e4e7;
@@ -25,6 +27,8 @@ body{
     font-size: 16px;
     color: #5e7a7d;
     margin-bottom: 6px;
+    font-weight: bold;
+
 }
 .amount-input{
     display: flex;
@@ -74,12 +78,14 @@ body{
     padding: 5px 30px;
 }
 .custom-input{
-    width: 145px;
+   
+  width: 100.6px;
   height: 48px;
+  margin: 0 16.6px 16px 0;
+  padding: 6px 17.5px 6px 16.3px;
   border-radius: 5px;
-  background-color: #f3f9fa;
-  margin: 0;
   
+  color: white;
 }
 .col{
     display: flex;
@@ -136,7 +142,7 @@ body{
  .second-ones{
     display: flex;
     justify-content: space-between;
-    margin-bottom: -30px;
+    margin-bottom: -40px;
  }
  .tipamount{
     font-size: 16px;
@@ -152,4 +158,54 @@ font-size: 13px;
     color: #26c2ae;
     font-size: 32px;
     font-weight: bold;
+    
  }
+@media screen and  (min-width:1124px) {
+    .imgdiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width: 920px;
+        height: 481px;
+        background-color: #fff;
+        border-radius: 25px;
+        box-shadow: 0 32px 43px 0 rgba(79, 166, 175, 0.2);
+        margin: 87.9px 0 0;
+          padding: 32px 32px 32px 48px;
+          
+    }
+    .allofthem{
+        display:  flex;
+    }
+    .rightside{
+        max-width: 50%;
+        width: 100%;
+        
+    }
+    .leftside{
+        max-width: 50%;
+        width: 100%;
+    }
+    .green{
+         width: 370px;
+        height: 400px; 
+        margin: 12px 62px 32px 63px;
+        padding: 32px 32px 32px 63px;
+        border-radius: 15px;
+        background-color: #00474b;
+    }
+    .input-field{
+        width: 380px;
+    }
+    .tip-buttons{
+        width: 110px;
+    }
+    .custom-input{
+        width: 110px;
+    }
+    .reset{
+        margin-top: 30px;
+    }
+}
