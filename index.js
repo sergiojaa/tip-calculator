@@ -1,0 +1,5 @@
+let five = document.getElementById('five')
+let ten = document.getElementById('ten')
+let fifteen = document.getElementById('fifteen')
+let twentyfive = document.getElementById('twentyfive')
+let fifty = document.getElementById('fifty')
