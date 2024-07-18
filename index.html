@@ -7,64 +7,57 @@
     <title>Document</title>
 </head>
 <body>
-   
-        <div class="container">
-            <div class="maindiv">
-                <div class="leftside">
-                    <div class="bill-input">
-                        <p class="bill">Bill</p>
-                        <input type="text">
-                    </div>
-                    <div class="tip-percent">
-                        <p>select tip %</p>
-                        <div class="percents">
-                            <div>
-                                <span>5%</span>
-                            </div>
-                            <div>
-                                <span>10%</span>
-                            </div>
-                            <div>
-                                <span>15%</span>
-                            </div>
-                            <div>
-                                <span>25%</span>
-                            </div>
-                            <div>
-                                <span>50%</span>
-                            </div>
-                            <div>
-                                <span>custom    </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="numberpeople">
-                        <p>Number of People</p>
-                        <input type="text">
-                    </div>
-    
+    <img class="SPLITTER" src="images/SPLITTER.png" alt="">
+    <div class="container">
+        <form class="amount-input">
+            <label class="bill" for="bill-amount">Bill</label>
+            <input class="input-field" type="number" name="amount" id="bill-amount" placeholder="0"/>
+          </form>
+          <div class="select-tip">
+            <p>Select Tip %</p>
+            <div class="col">
+                <button type="button" class="tip-buttons five" value="5%">5%</button>
+                <button type="button"  class="tip-buttons ten" value="10%">10%</button>
+                <button type="button"  class="tip-buttons fifteen" value="15%">15%</button>
+              </div>
+              <div class="col">
+                <button type="button" class="tip-buttons twenty-five" value="25%">25%</button>
+                <button type="button" class="tip-buttons fifty" value="50%">50%</button>
+                <input type="number" id="tip" class="custom-input" value="custom" placeholder="Custom">
+            </div>
+        </div>
+        <form class="num-people">
+            <label for="people-count" class="people-count">Number of People</label>
+            <input class="input-field" type="number" name="number-people" id="people-count" placeholder="0"
+              aria-label="enter-number-of-people" required aria-required="true" min="0" max="100" />
+          </form>
+         <div class="green">
+            <div class="first-ones">
+                <div class="tip">
+                    <p class="tipamount">Tip Amount</p>
+                    <p class="person">/ person</p>
                 </div>
-                <div class="rightside">
-                    <div class="tips">
-                        <p>tip Amount</p>
-                        <span>/ person</span>
-                    </div>
-                    <div class="money-tipamount">
-
-                    </div>
-                    <div class="total">
-                        <p>Total</p>
-                        <span>/ Person</span>
-                    </div>
-                    <div class="money-total">
-
-                    </div>
-                    <button>RESET</button>
+                <div class="money-amount">
+                    $4.27
                 </div>
             </div>
-          
-        </div>
-    
-  
+            <div class="second-ones">
+                <div class="total">
+                    <p class="tipamount">total</p>
+                    <p class="person">/ person</p>
+                </div>
+                <div class="money-amount">
+                    $32.3
+                </div>
+            </div>
+            
+            
+            <dic class="reset-button">
+                <button class="reset">RESET</button>
+            </dic>
+         </div>
+
+    </div>
+   
 </body>
 </html>
